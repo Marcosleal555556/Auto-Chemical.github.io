@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Conversor</title>
+</head>
+<script src="receitas.js"></script>
+
+<body>
+  <h2>Qual conversão gostaria de fazer?</h2>
+  <select id="tipos">
+    <option value="Selecione">Selecione</option>
+    <option value="Temperatura">Temperatura</option>
+    <option value="Liquidos">Liquidos</option>
+    <option value="Massa">Massa/Peso</option>
+  </select>
+  <br><br>
+  <button onclick="exibirConversao()">Concluido</button>
+
+  <div id="exibir"></div>
+
+  <div id="liq" style="display: none;">
+    <h2>Conversor de Líquidos</h2>
+    <label for="volume">Digite o valor:</label>
+    <input type="number" id="volume" step="any" placeholder="Digite o valor">
+
+    <select id="unidade">
+      <option value="ml">Mililitros (ml)</option>
+      <option value="cl">Centilitros (cl)</option>
+      <option value="dl">Decilitros (dl)</option>
+      <option value="l">Litros (l)</option>
+    </select>
+
+    <button onclick="converterLiquidos()">Converter</button>
+
+    <div id="resultado"></div>
+  </div>
+</body>
+
+</html>
