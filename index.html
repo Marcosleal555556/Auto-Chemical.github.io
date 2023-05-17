@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selecione o Produto</title>
+  <script>
+    function exibirReceita() {
+      var produto = document.getElementById("produtos").value;
+      var receita = "";
+
+      if (produto === "Creme Facial") {
+        receita = "<h3>Receita de Creme Facial Hidratante:</h3>" +
+                  "<h4>Ingredientes:</h4>" +
+                  "<ul>" +
+                  "<li>Fase Oleosa:</li>" +
+                  "<ul>" +
+                  "<li>10% de Óleo Vegetal (pode ser óleo de jojoba, óleo de amêndoas, óleo de semente de uva, entre outros)</li>" +
+                  "<li>5% de Emulsificante (por exemplo, estearato de glicerila)</li>" +
+                  "<li>2% de Cera de Abelha</li>" +
+                  "</ul>" +
+                  "<li>Fase Aquosa:</li>" +
+                  "<ul>" +
+                  "<li>75% de Água Destilada</li>" +
+                  "<li>3% de Glicerina</li>" +
+                  "</ul>" +
+                  "<li>Fase Ativa:</li>" +
+                  "<ul>" +
+                  "<li>2% de Pantenol</li>" +
+                  "<li>1% de Extrato de Camomila</li>" +
+                  "<li>0,5% de Conservante (utilize um conservante apropriado para produtos cosméticos)</li>" +
+                  "</ul>" +
+                  "</ul>" +
+                  "<h4>Passo a passo:</h4>" +
+                  "<ol>" +
+                  "<li>Pese os ingredientes da fase oleosa (óleo vegetal, emulsificante e cera de abelha) em recipientes separados.</li>" +
+                  "<li>Em um recipiente resistente ao calor, aqueça a fase oleosa em banho-maria até que o emulsificante e a cera de abelha derretam completamente.</li>" +
+                  "<li>Em outro recipiente, aqueça a água destilada até atingir a mesma temperatura da fase oleosa.</li>" +
+                  "<li>Adicione lentamente a água aquecida à fase oleosa, enquanto mexe constantemente para garantir uma mistura homogênea.</li>" +
+                  "<li>Continue a mexer a emulsão até atingir uma temperatura em torno de 40-45°C.</li>" +
+                  "<li>Nesse momento, adicione a glicerina e misture bem.</li>" +
+                  "<li>Aguarde a emulsão esfriar até atingir uma temperatura em torno de 30°C.</li>" +
+                  "<li>Adicione o pantenol, o extrato de camomila e o conservante à emulsão e misture vigorosamente para garantir uma dispersão uniforme.</li>" +
+                  "<li>Continue a misturar até que o creme esteja completamente resfriado.</li>" +
+                  "<li>Verifique o pH do creme e, se necessário, faça os ajustes utilizando ácido cítrico ou hidróxido de sódio diluído.</li>" +
+                  "<li>Transfira o creme facial hidratante para frascos limpos e esterilizados, preferencialmente utilizando equipamentos apropriados para envase.</li>" +
+                  "</ol>";
+      }
+
+      document.getElementById("receita").innerHTML = receita;
+    }
+  </script>
+</head>
+<body>
+  <h2>Selecione o Produto:</h2>
+  <select id="produtos">
+    <option value="Selecione">Selecione</option>
+    <option value="Creme Facial">Creme Facial</option>
+  </select>
+  <br><br>
+  <button onclick="exibirReceita()">Exibir Receita</button>
+
+  <div id="receita"></div>
+</body>
+</html>
