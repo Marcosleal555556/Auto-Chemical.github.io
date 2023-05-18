@@ -1,0 +1,211 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.84), rgb(64, 64, 64));
+    color: white;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #B0AEAE;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius:100px ;
+  }
+  
+  button:hover {
+    background-color: #a5a4a4;
+  }
+  
+  /* Estilos para os elementos da calculadora de medidas líquidas */
+  #liq {
+    display: none;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  #liq h1 {
+    color: white;  }
+  
+  #liq label {
+    display: block;
+    margin-top: 10px;
+    color: white;  }
+  
+  #liq input[type="number"] {
+    padding: 5px;
+    width: 100px;
+    border-radius: 100px;
+  }
+  
+  #liq select {
+    padding: 5px;
+    width: 120px;
+  }
+  
+  #liq button {
+    margin-top: 10px;
+  }
+  
+  #liq p {
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para os elementos da calculadora conversora de temperatura */
+  #temp {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #temp h1 {
+    color: white;  }
+  
+  #temp label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  #temp input[type="number"] {
+    padding: 5px;
+    width: 100px;
+  }
+  
+  #temp select {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  #temp button {
+    margin-top: 10px;
+  }
+  
+  #temp p {
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para os elementos da calculadora conversora de massa/peso */
+  #peso {
+    display: none;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  #peso h1 {
+    color: white;
+  }
+  
+  #peso label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  #peso input[type="number"] {
+    padding: 5px;
+    width: 100px;
+  }
+  
+  #peso select {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  #peso button {
+    margin-top: 10px;
+  }
+  
+  #peso p {
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .corpo {
+    margin-left: 20px;
+    color: white;
+  }
+
+  h2,h1,h3,h4 {
+    color: white;
+  }
+  
+  label {
+    color: white;
+    padding: 10px;
+  }
+
+  input {
+    border-radius: 100px;
+    padding: 20px;
+  }
+
+  select {
+    border-radius: 100px;
+    padding: 10px;
+  }
+
+  .inicio {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  #resultado{
+    color: white;
+  }
+  #resultado2{
+    color: white;
+  }
+
+  #resultado3{
+    color: white;
+  }
+
+  .te-tip {
+    display: flex;
+    flex-direction: row;
+    padding-right:10px ;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tipos {
+    height:40px ;
+    width:400px ;
+  }
+
+  h2 {
+    padding-right: 10px;
+  }

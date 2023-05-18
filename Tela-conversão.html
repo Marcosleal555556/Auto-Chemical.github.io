@@ -3,37 +3,91 @@
 
 <head>
   <title>Conversor</title>
+  <link rel="stylesheet" href="style-calculadora.css">
 </head>
 <script src="receitas.js"></script>
 
 <body>
-  <h2>Qual conversão gostaria de fazer?</h2>
-  <select id="tipos">
-    <option value="Selecione">Selecione</option>
-    <option value="Temperatura">Temperatura</option>
-    <option value="Liquidos">Liquidos</option>
-    <option value="Massa">Massa/Peso</option>
-  </select>
-  <br><br>
-  <button onclick="exibirConversao()">Concluido</button>
+  <Header>
+    <div class="imagem">
+      <img src="imagem/logo_auto_chimical_removebg_preview_1.png">
+    </div>
+  </Header>
+  <div class="corpo">
+    <div class="inicio">
+      <div class="te-tip">
+        <h2>Qual conversão gostaria de fazer?</h2>
+        <select id="tipos">
+          <option value="Selecione">Selecione</option>
+          <option value="Temperatura">Temperatura</option>
+          <option value="Liquidos">Liquidos</option>
+          <option value="Massa">Massa/Peso</option>
+        </select>
+      </div>
+      <br><br>
+      <button onclick="exibirConversao()">Concluido</button>
 
-  <div id="exibir"></div>
+      <div id="exibir"></div>
+    </div>
+    <div id="liq" style="display: none;">
+      <h1>Calculadora de Medidas Líquidas</h1>
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade">
+      <br>
+      <label for="unidadeOrigem">Unidade para Converter:</label>
+      <select id="unidadeOrigem">
+        <option value="mililitros">Mililitros</option>
+        <option value="litros">Litros</option>
+        <option value="galoes">Galões</option>
+      </select>
+      <br>
+      <label for="unidadeDestino">Unidade Convertida:</label>
+      <select id="unidadeDestino">
+        <option value="mililitros">Mililitros</option>
+        <option value="litros">Litros</option>
+        <option value="galoes">Galões</option>
+      </select>
+      <br>
+      <button onclick="converterLiquidos()">Converter</button>
+      <br>
+      <p id="resultado"></p>
+    </div>
 
-  <div id="liq" style="display: none;">
-    <h2>Conversor de Líquidos</h2>
-    <label for="volume">Digite o valor:</label>
-    <input type="number" id="volume" step="any" placeholder="Digite o valor">
+    <div id="temp" style="display: none;">
+      <h1>Calculadora Conversora de Temperatura</h1>
+      <label for="opcao">Escolha uma opção:</label>
+      <select id="opcao">
+        <option value="1">Celsius para Fahrenheit</option>
+        <option value="2">Fahrenheit para Celsius</option>
+        <option value="3">Celsius para Kelvin</option>
+        <option value="4">Kelvin para Celsius</option>
+      </select>
+      <br>
+      <label for="temperatura">Digite a temperatura:</label>
+      <input type="number" id="temperatura">
+      <br>
+      <button onclick="converterTemperatura()">Converter</button>
+      <br>
+      <p id="resultado2"></p>
+    </div>
 
-    <select id="unidade">
-      <option value="ml">Mililitros (ml)</option>
-      <option value="cl">Centilitros (cl)</option>
-      <option value="dl">Decilitros (dl)</option>
-      <option value="l">Litros (l)</option>
-    </select>
-
-    <button onclick="converterLiquidos()">Converter</button>
-
-    <div id="resultado"></div>
+    <div id="peso" style="display: none;">
+      <h1>Calculadora Conversora de Massa/Peso</h1>
+      <label for="opcao">Escolha uma opção:</label>
+      <select id="opcao">
+        <option value="1">Quilograma para Grama</option>
+        <option value="2">Grama para Quilograma</option>
+        <option value="3">Quilograma para Miligrama</option>
+        <option value="4">Miligrama para Grama</option>
+      </select>
+      <br>
+      <label for="valor">Digite o valor:</label>
+      <input type="number" id="valor">
+      <br>
+      <button onclick="converterMassa()">Converter</button>
+      <br>
+      <p id="resultado3"></p>
+    </div>
   </div>
 </body>
 
