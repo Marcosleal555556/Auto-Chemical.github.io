@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Página de Cadastro</title>
+  <link rel="stylesheet" href="pagina_de_cadastro.css">
   <script>
     function cadastrarUsuario() {
       event.preventDefault(); // Impede o envio do formulário
@@ -33,7 +34,8 @@
   </script>
 </head>
 <body>
-  <h2>Cadastro</h2>
+  <img src="imagem/logo_auto_chimical_removebg_preview_1.png" class="logocadastro">
+  <h2 class="txtcadastro">Cadastro</h2>
   <form id="cadastroForm" onsubmit="cadastrarUsuario()">
     <label for="username">Nome de Usuário:</label>
     <input type="text" id="username" name="username" required><br><br>
@@ -44,7 +46,7 @@
     <label for="password">Senha:</label>
     <input type="password" id="password" name="password" required><br><br>
 
-    <input type="submit" value="Cadastrar">
+    <input type="submit" id="botaoIr" value="Cadastrar">
   </form>
 </body>
 </html>
