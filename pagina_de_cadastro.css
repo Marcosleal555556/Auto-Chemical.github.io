@@ -1,0 +1,54 @@
+html {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(110, 110, 110, 1) 95%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+.logocadastro{
+    height: 170px;
+    width: 350px;
+    margin-left: 30px;
+    filter: grayscale(100%);
+}
+
+.txtcadastro{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 5%;
+    font-size: 50px;
+    
+}
+
+#cadastroForm{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    color: aliceblue;
+}
+#username {
+    width: 365px;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    
+    }
+
+#email {
+    width: 500px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#password{
+    width: 500px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#botaoIr {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
