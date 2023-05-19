@@ -1,0 +1,64 @@
+
+  html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 1024px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.84), rgb(64,64,64));
+    color: white;
+  }
+  header {
+    padding: 0px;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0,0,0,0.158);
+    height: 170px;
+    width: 100%;
+  }
+  /* Estilos para a imagem */
+  header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+  }
+
+  header nav {
+    float: right;
+    margin-top: 90px;
+    font-size: 20px;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    margin-right: 100px;
+    padding: 10;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+  }
+  .logo {
+    height: 200px;
+    width: 300px;
+    margin-left: 100px;
+    filter: grayscale(100%);
+    margin-top: 0px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+#vasco {
+    border-bottom: 3.5px solid grey;
+}
