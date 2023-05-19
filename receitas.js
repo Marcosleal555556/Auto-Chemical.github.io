@@ -61,15 +61,9 @@ function converterLiquidos() {
     case 'galoes':
       resultado = resultado / 3785.41;
       break;
-    case 'onzas':
-      resultado = resultado / 29.5735;
-      break;
-    case 'pintas':
-      resultado = resultado / 473.176;
-      break;
   }
 
-  document.getElementById('resultado').innerHTML = resultado.toFixed(2);
+  document.getElementById('resultado').innerHTML = unidadeOrigem + " para " + unidadeDestino + " é igual a " + resultado.toFixed(2) + " " + unidadeDestino;
 }
 
 function converterTemperatura() {
