@@ -6,22 +6,22 @@
     function cadastrarUsuario() {
       event.preventDefault(); // Impede o envio do formulário
 
-      // Obtenha os valores dos campos
+      
       var username = document.getElementById("username").value;
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
 
-      // Crie um objeto JSON com os dados do formulário
+      
       var formData = {
         username: username,
         email: email,
         password: password
       };
 
-      // Converta o objeto JSON em uma string
+      
       var jsonData = JSON.stringify(formData);
 
-      // Faça algo com os dados do formulário (por exemplo, enviar para o servidor)
+    
       console.log(jsonData);
 
       // Limpe o formulário
