@@ -46,6 +46,33 @@ html {
     height: 30px;
     border-radius: 5px;
 }
-#ircadastro {
-    
+
+
+nav {
+    font-size: 20px;
+    color: white;
+    height:100px ;
+    list-style-type: none;
+    margin-left: 000px;
+    margin-bottom: 2000px;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 100px;
+    padding: 10;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+
 }
