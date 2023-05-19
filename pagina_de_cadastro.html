@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Cadastro</title>
+  <script>
+    function cadastrarUsuario() {
+      event.preventDefault(); // Impede o envio do formulário
+
+      // Obtenha os valores dos campos
+      var username = document.getElementById("username").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Crie um objeto JSON com os dados do formulário
+      var formData = {
+        username: username,
+        email: email,
+        password: password
+      };
+
+      // Converta o objeto JSON em uma string
+      var jsonData = JSON.stringify(formData);
+
+      // Faça algo com os dados do formulário (por exemplo, enviar para o servidor)
+      console.log(jsonData);
+
+      // Limpe o formulário
+      document.getElementById("cadastroForm").reset();
+
+      // Redirecionar para a página de login
+      window.location.href = "pagina_de_login.html";
+    }
+  </script>
+</head>
+<body>
+  <h2>Cadastro</h2>
+  <form id="cadastroForm" onsubmit="cadastrarUsuario()">
+    <label for="username">Nome de Usuário:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+</body>
+</html>
+
