@@ -3,44 +3,63 @@
 <head>
   <link rel="stylesheet" href="pagina_de_login.css">
   <title>Página de Login</title>
+  <style>
+    /* Adicione estilos adicionais aqui */
+  </style>
   <script>
-    function fazerLogin() {
-      event.preventDefault(); // Impede o envio do formulário
+    // Definir usuários válidos em um objeto JSON
+    const usuariosValidos = {
+      usuario1: {
+        email: "diego@gmail.com",
+        senha: "senha123"
+      },
+      usuario2: {
+        email: "222.222.222-22",
+        senha: "senha456"
+      },
+      usuario3: {
+        email: "333.333.333-33",
+        senha: "senha789"
+      }
+    };
 
-      // Obtenha os valores dos campos
-      var loginEmail = document.getElementById("loginEmail").value;
-      var loginPassword = document.getElementById("loginPassword").value;
+    // Função de validação de login
+    function validarLogin() {
+      // Obter os valores de entrada do email e da senha
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
 
-      
-      console.log("Email: " + loginEmail + ", Senha: " + loginPassword);
+      // Verificar se o email e a senha correspondem a um usuário válido
+      for (let usuario in usuariosValidos) {
+        if (
+          usuariosValidos[usuario].email === email &&
+          usuariosValidos[usuario].senha === senha
+        ) {
+          alert("Login válido para o usuário " + usuario);
+          return true; // login válido
+        }
+      }
 
-      
-      document.getElementById("loginForm").reset();
-
-      // Redirecionar para a página home.html
-      window.location.href = "index.html";
+      alert("Email ou senha inválido"); // login inválido
+      return false;
     }
   </script>
 </head>
 <body>
   <img src="imagem/logo_auto_chimical_removebg_preview_1.png" class="logologin">
   <h2 class="txtlogin">Login</h2>
-  <form id="loginForm" onsubmit="fazerLogin()">
-    <label for="loginEmail">Email:</label>
-    <input type="email" id="loginEmail" name="loginEmail" required><br><br>
+  <form id="loginForm" onsubmit="return validarLogin()">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
 
-    <label for="loginPassword">Senha:</label>
-    <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required><br><br>
 
-    <input type="submit" id="botaologin"  value="Entrar">
+    <input type="submit" id="botaologin" value="Entrar">
 
-   
     <nav>
       <li><a href="pagina_de_cadastro.html">Crie uma conta</a></li>
     </nav>
-
   </form>
 </body>
 </html>
-
-
